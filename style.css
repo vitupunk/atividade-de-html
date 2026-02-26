@@ -5,3 +5,20 @@
     box-sizing: border-box;
 
 }
+
+body{
+    background-color:#355886 ;
+    background-image: url(assents/Gemini_Generated_Image_e0lwe4e0lwe4e0lw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px;
+    background-attachment: fixed;
+}
+
+img{
+    width: 20%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 20px auto;
+}   
