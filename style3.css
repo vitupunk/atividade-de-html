@@ -1,0 +1,118 @@
+/* Fundo escuro para combinar com o tema de furtividade */
+body {
+    background-color: #1a1a2e; 
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* O mesmo menu que usamos na página 2 */
+.menu-topo {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b1536;
+}
+
+.menu-topo a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+.menu-topo a:hover {
+    color: #f2a900; /* Fica amarelo ao passar o mouse */
+}
+
+/* A caixa principal que segura o conteúdo */
+.container-jogabilidade {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #222831; /* Uma cor um pouco mais clara que o fundo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h2 {
+    text-align: center;
+    color: #f2a900; 
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Alinha o texto e o GIF lado a lado */
+.conteudo-jogo {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Centraliza as duas colunas verticalmente */
+}
+
+/* Estilos da coluna de texto */
+.texto-gameplay {
+    flex: 1; /* Ocupa metade da caixa */
+}
+
+.texto-gameplay h3 {
+    color: #00adb5; /* Cor azul claro para o subtítulo */
+    font-size: 1.5rem;
+}
+
+.texto-gameplay p, .texto-gameplay li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.texto-gameplay ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.texto-gameplay li {
+    margin-bottom: 15px;
+}
+
+/* Estilos da coluna do GIF */
+.gif-gameplay {
+    flex: 1; /* Ocupa a outra metade da caixa */
+    text-align: center;
+}
+
+.gif-gameplay img {
+    width: 100%; /* Faz o GIF se adaptar ao tamanho da caixa */
+    max-width: 400px;
+    border: 3px solid #f2a900; /* Coloca uma borda amarela bonita no GIF */
+    border-radius: 8px; /* Arredonda as pontas da borda */
+}
+
+/* Estilo do botão de voltar */
+.botoes-finais {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0f3460;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #f2a900;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+/* Para não quebrar no celular (coloca o GIF embaixo do texto) */
+@media (max-width: 768px) {
+    .conteudo-jogo {
+        flex-direction: column;
+    }
+}

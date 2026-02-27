@@ -1,0 +1,101 @@
+/* style2.css */
+
+/* Cor de fundo azul escuro baseada na sua print */
+body {
+    background-color: #0b1536; 
+    color: #000000; /* Texto padrão preto dentro da caixa branca */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do menu superior estilo o site da print */
+.menu-topo {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b1536;
+}
+
+.menu-topo a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+.menu-topo a:hover {
+    color: #f2a900;
+}
+
+/* Centraliza o conteúdo na tela */
+.container-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* A CAIXA BRANCA principal */
+.cartao-jogo {
+    background-color: #ffffff;
+    display: flex; /* O Flexbox é o que coloca imagem e texto lado a lado */
+    padding: 40px;
+    gap: 30px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo da área da imagem */
+.coluna-imagem {
+    flex: 0 0 250px; /* A imagem terá um tamanho fixo de 250px de largura */
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc; /* Uma borda sutil em volta da capa */
+}
+
+/* Estilo da área do texto */
+.coluna-texto {
+    flex: 1; /* Ocupa todo o resto do espaço disponível na caixa branca */
+}
+
+.coluna-texto h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #111;
+}
+
+.coluna-texto p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.coluna-texto .sinopse {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Estilo do botão "Continue Reading..." escuro */
+.botao-leitura {
+    display: inline-block;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.botao-leitura:hover {
+    background-color: #555555;
+}
+
+/* Responsividade: Se a tela for pequena (celular), empilha a imagem em cima do texto */
+@media (max-width: 700px) {
+    .cartao-jogo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
